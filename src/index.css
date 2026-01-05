@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Sustainable green palette for Trace Resource */
+    --background: 0 0% 100%;
+    --foreground: 150 10% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 150 10% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 10% 15%;
+    
+    /* Primary: Deep sustainable green */
+    --primary: 147 55% 30%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 147 45% 45%;
+    --primary-lighter: 147 35% 60%;
+    
+    /* Secondary: Earth tones */
+    --secondary: 30 30% 92%;
+    --secondary-foreground: 150 10% 15%;
+    --secondary-darker: 30 20% 75%;
+    
+    /* Muted backgrounds */
+    --muted: 120 10% 96%;
+    --muted-foreground: 150 5% 45%;
+    
+    /* Accent: Trust blue */
+    --accent: 205 80% 42%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 205 70% 55%;
+    
+    /* Status colors */
+    --success: 147 55% 35%;
+    --warning: 43 95% 50%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --info: 205 80% 50%;
+    
+    /* Borders and inputs */
+    --border: 120 10% 88%;
+    --input: 120 10% 88%;
+    --ring: 147 55% 30%;
+    
+    /* Chart colors - green spectrum */
+    --chart-1: 147 60% 40%;
+    --chart-2: 135 55% 45%;
+    --chart-3: 160 50% 42%;
+    --chart-4: 175 45% 38%;
+    --chart-5: 190 50% 45%;
+    
+    /* Shadows - subtle and energy-efficient */
+    --shadow-sm: 0 1px 3px hsla(150, 10%, 15%, 0.06);
+    --shadow-card: 0 2px 8px hsla(150, 10%, 15%, 0.08);
+    --shadow-card-hover: 0 4px 16px hsla(150, 10%, 15%, 0.12);
+    --shadow-lg: 0 8px 24px hsla(150, 10%, 15%, 0.15);
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 150 15% 8%;
+    --foreground: 120 10% 95%;
+    --card: 150 15% 10%;
+    --card-foreground: 120 10% 95%;
+    --popover: 150 15% 10%;
+    --popover-foreground: 120 10% 95%;
+    
+    --primary: 147 60% 45%;
+    --primary-foreground: 150 15% 8%;
+    --primary-light: 147 55% 55%;
+    --primary-lighter: 147 45% 65%;
+    
+    --secondary: 30 20% 18%;
+    --secondary-foreground: 120 10% 95%;
+    --secondary-darker: 30 15% 25%;
+    
+    --muted: 150 10% 15%;
+    --muted-foreground: 120 8% 60%;
+    
+    --accent: 205 75% 48%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 205 65% 60%;
+    
+    --success: 147 60% 42%;
+    --warning: 43 90% 55%;
+    --destructive: 0 65% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --info: 205 75% 55%;
+    
+    --border: 150 10% 20%;
+    --input: 150 10% 20%;
+    --ring: 147 60% 45%;
+    
+    --chart-1: 147 65% 48%;
+    --chart-2: 135 60% 52%;
+    --chart-3: 160 55% 48%;
+    --chart-4: 175 50% 45%;
+    --chart-5: 190 55% 50%;
+    
+    --shadow-sm: 0 1px 3px hsla(0, 0%, 0%, 0.3);
+    --shadow-card: 0 2px 8px hsla(0, 0%, 0%, 0.4);
+    --shadow-card-hover: 0 4px 16px hsla(0, 0%, 0%, 0.5);
+    --shadow-lg: 0 8px 24px hsla(0, 0%, 0%, 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
